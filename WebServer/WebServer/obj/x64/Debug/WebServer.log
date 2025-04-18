@@ -1,0 +1,12 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.113.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(98,45): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(98,45): warning :    98 |                                 int n = read(fd, buffer, 1024);
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(98,45): warning :       |                                         ~~~~^~~~~~~~~~~~~~~~~~
+  正在链接对象
+  WebServer.vcxproj -> C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\bin\x64\Debug\WebServer.out

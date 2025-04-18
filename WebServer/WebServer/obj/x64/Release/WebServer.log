@@ -1,0 +1,24 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.113.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(53,27): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(53,27): warning :    53 |             int len = read(fd[0], buf, sizeof(buf));
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\main.cpp(53,27): warning :       |                       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  read.cpp
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\read.cpp(29,23): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\read.cpp(29,23): warning :    29 |         int len = read(rfd, buf, sizeof(buf));
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\read.cpp(29,23): warning :       |                   ~~~~^~~~~~~~~~~~~~~~~~~~~~~
+  write.cpp
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\write.cpp(37,14): warning : ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\write.cpp(37,14): warning :    37 |         write(wfd, buf, strlen(buf));
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\write.cpp(37,14): warning :       |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+  正在链接对象
+/usr/bin/ld : error : /home/czt/projects/WebServer/obj/x64/Release/read.o: in function `main':
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\read.cpp(10): error : multiple definition of `main'; /home/czt/projects/WebServer/obj/x64/Release/main.o:/home/czt/projects/WebServer/main.cpp:14: first defined here
+/usr/bin/ld : error : /home/czt/projects/WebServer/obj/x64/Release/write.o: in function `main':
+C:\Users\86199\Desktop\cpp_project\WebServer\WebServer\write.cpp(10): error : multiple definition of `main'; /home/czt/projects/WebServer/obj/x64/Release/main.o:/home/czt/projects/WebServer/main.cpp:14: first defined here
+collect2 : error : ld returned 1 exit status
